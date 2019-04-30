@@ -13,4 +13,6 @@ RUN	apk add --no-cache \
 
 COPY pr.sh /usr/bin/pr.sh
 
+RUN chmod +x /usr/bin/pr.sh
+
 ENTRYPOINT ["pr.sh"]
