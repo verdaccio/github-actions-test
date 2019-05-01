@@ -1,5 +1,5 @@
 workflow "PR" {
-  on = "pull_request"
+  on = "push"
   resolves = ["docker://node:10-2"]
 }
 
